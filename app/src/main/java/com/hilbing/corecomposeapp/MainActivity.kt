@@ -34,6 +34,13 @@ fun MainScreen(){
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally)
         {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ){
+                HorizontalColoredBar(color = Color.Cyan)
+                HorizontalColoredBar(color = Color.LightGray)
+            }
             HorizontalColoredBar(Color.White)
             HorizontalColoredBar(Color.Green)
             HorizontalColoredBar(Color.Blue)
@@ -49,7 +56,7 @@ fun HorizontalColoredBar(color: Color){
         color = color,
         modifier = Modifier
             .height(25.dp)
-            .width(350.dp)
+            .width(35.dp)
     ) {}
 }
 
