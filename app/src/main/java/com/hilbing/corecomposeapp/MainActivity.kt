@@ -29,10 +29,10 @@ fun MainScreen(){
     Surface(
         color = Color.DarkGray,
         modifier = Modifier.fillMaxSize()) {
-        Row(
+        Column(
             modifier = Modifier.fillMaxSize(),
-            horizontalArrangement = Arrangement.SpaceEvenly,
-            verticalAlignment = Alignment.CenterVertically)
+            verticalArrangement = Arrangement.SpaceEvenly,
+            horizontalAlignment = Alignment.CenterHorizontally)
         {
             HorizontalColoredBar(Color.White)
             HorizontalColoredBar(Color.Green)
@@ -48,8 +48,8 @@ fun HorizontalColoredBar(color: Color){
     Surface(
         color = color,
         modifier = Modifier
-            .height(600.dp)
-            .width(60.dp)
+            .height(25.dp)
+            .width(350.dp)
     ) {}
 }
 
